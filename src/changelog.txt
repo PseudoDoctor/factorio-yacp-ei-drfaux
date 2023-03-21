@@ -1,0 +1,8 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2023-03-21 13:07
+  Features:
+    - First version
+  Changes:
+    - Attempt to replace iron-gear-wheel with motor in recipes for AAI vehicles Chaingunner
+      Doesn't crash the game

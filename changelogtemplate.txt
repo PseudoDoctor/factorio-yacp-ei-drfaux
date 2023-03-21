@@ -1,0 +1,19 @@
+
+https://wiki.factorio.com/Tutorial:Mod_changelog_format
+---------------------------------------------------------------------------------------------------
+Version: x.y.z
+Date: yyyy-mm-dd
+  Bugfixes:
+    - thing 1
+      more about thing 1
+    - thing 2
+  Features:
+    - feature 3
+    - feature 4
+  Changes:
+    - change 5
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 2023-03-10
+  Features:
+    - First version

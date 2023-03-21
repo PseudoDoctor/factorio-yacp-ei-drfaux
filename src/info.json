@@ -1,6 +1,6 @@
 {
     "name": "yacp-ei-drfaux",
-    "version": "{VERSION}",
+    "version": "@@VERSION@@",
     "title": "Yet Another Compatibility Patch for Exotic Industries",
     "author": "Dr Faux",
     "factorio_version": "1.1",

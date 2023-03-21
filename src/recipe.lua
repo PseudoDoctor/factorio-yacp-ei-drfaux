@@ -39,15 +39,14 @@ end
 -- 	  {type="item", name="radar", amount=1},
 -- 	}
 --   end
-
-if settings.startup["less-wood-for-aai-industry-electronic-circuit"].value == true then
-	if data.raw.recipe["electronic-circuit"] then
-		local base = data.raw.recipe["electronic-circuit"]
+if exotic_industries then
+	if data.raw.recipe["vehicle-chaingunner"] then
+		local base = data.raw.recipe["vehicle-chaingunner"]
 		local iron_version = table.deepcopy(base)
 
-		if iron_version.ingredients then replace_ingredient(iron_version, "wood", "iron-plate", 1) end
-		if iron_version.normal then replace_ingredient(iron_version.normal, "wood", "iron-plate", 1) end
-		if iron_version.expensive then replace_ingredient(iron_version.expensive, "wood", "iron-plate", 2) end
+		if iron_version.ingredients then replace_ingredient(iron_version, "iron-gear-wheel", "ei_iron-mechanical-parts", 8) end
+		if iron_version.normal then replace_ingredient(iron_version.normal, "iron-gear-wheel", "ei_iron-mechanical-parts", 8) end
+		if iron_version.expensive then replace_ingredient(iron_version.expensive, "iron-gear-wheel", "ei_iron-mechanical-parts", 10) end
 
 		data:extend({
 			iron_version

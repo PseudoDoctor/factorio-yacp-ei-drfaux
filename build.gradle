@@ -29,10 +29,7 @@ import org.apache.tools.ant.filters.ReplaceTokens
 tasks.register('prep-files', Copy){
     from 'src'
     into "${prepDir}/${modNameVersion}"
-    filter(ReplaceTokens, tokens: [
-        version: modVersion, 
-        'yyy': 'bbb'
-    ])
+    filter{it.replaceAll('@@VERSION@@', modVersion)}
 }
 tasks.register('zip-files', Zip){
     archiveFileName = zipDst
