@@ -1,0 +1,14 @@
+{
+    "name": "yacp-ei-drfaux",
+    "version": "{VERSION}",
+    "title": "Yet Another Compatibility Patch for Exotic Industries",
+    "author": "Dr Faux",
+    "factorio_version": "1.1",
+    "dependencies": [
+        "base >= 1.1.0",
+        "? aai-vehicles-chaingunner >= 0.6.1",
+        "? aai-vehicles-warden >= 0.5.3",
+        "? aai-vehicles-hauler >= 0.6.1",
+        "? exotic-industries >= 0.2.1"
+    ]
+}
