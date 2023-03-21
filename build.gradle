@@ -9,7 +9,7 @@ import org.apache.tools.ant.filters.ReplaceTokens
  * Third, zip build/{mod-name}_{version-number} to build/{mod-name}_{version-number}.zip
  */
  def modName = "yacp-ei-drfaux"
- def modVersion = "0.0.1"
+ def modVersion = "0.0.2"
  def modNameVersion = "${modName}_${modVersion}"
  def prepDir = "${buildDir}/prep"
  def zipDst = "${modNameVersion}.zip"

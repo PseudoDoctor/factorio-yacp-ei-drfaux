@@ -39,7 +39,7 @@ end
 -- 	  {type="item", name="radar", amount=1},
 -- 	}
 --   end
-if exotic_industries then
+-- if exotic_industries then
 	if data.raw.recipe["vehicle-chaingunner"] then
 		local base = data.raw.recipe["vehicle-chaingunner"]
 		local iron_version = table.deepcopy(base)
@@ -52,4 +52,4 @@ if exotic_industries then
 			iron_version
 		})
 	end
-end
+-- end
