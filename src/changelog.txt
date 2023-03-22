@@ -13,10 +13,10 @@ Date: 21.03.2023
   Changes:
     - AAI ChainGunner and AAI Hauler does not use Engine Unit
       replace_ingredient(iron_version, "iron-gear-wheel", "ei_iron-mechanical-parts", 6) 
-		  replace_ingredient(iron_version, "iron-plate", "ei_iron-beam", 20)
+      replace_ingredient(iron_version, "iron-plate", "ei_iron-beam", 20)
     - AAI Warden does use Engine Unit
       replace_ingredient(iron_version, "iron-gear-wheel", "engine-unit", 8) 
-		  replace_ingredient(iron_version, "iron-plate", "ei_iron-mechanical-parts", 20)
+      replace_ingredient(iron_version, "iron-plate", "ei_iron-mechanical-parts", 20)
     - Reverse Factory
       replace_ingredient(iron_version, "iron-gear-wheel", "ei_iron-mechanical-parts", 5) 
 ---------------------------------------------------------------------------------------------------
