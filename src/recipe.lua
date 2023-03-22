@@ -116,3 +116,40 @@ if data.raw.recipe["vehicle-warden"] then
 		iron_version
 	})
 end
+
+if data.raw.recipe["reverse-factory-1"] then
+	local base = data.raw.recipe["reverse-factory-1"]
+	local iron_version = table.deepcopy(base)
+
+	if iron_version.ingredients then 
+		replace_ingredient(iron_version, "iron-gear-wheel", "ei_iron-mechanical-parts", 5) 
+	end
+	if iron_version.normal then
+		replace_ingredient(iron_version.normal, "iron-gear-wheel", "ei_iron-mechanical-parts", 5) 
+	end
+	if iron_version.expensive then
+		replace_ingredient(iron_version.expensive, "iron-gear-wheel", "ei_iron-mechanical-parts", 8) 
+	end
+
+	data:extend({
+		iron_version
+	})
+end
+if data.raw.recipe["reverse-factory-2"] then
+	local base = data.raw.recipe["reverse-factory-2"]
+	local iron_version = table.deepcopy(base)
+
+	if iron_version.ingredients then 
+		replace_ingredient(iron_version, "iron-gear-wheel", "ei_iron-mechanical-parts", 5) 
+	end
+	if iron_version.normal then
+		replace_ingredient(iron_version.normal, "iron-gear-wheel", "ei_iron-mechanical-parts", 5) 
+	end
+	if iron_version.expensive then
+		replace_ingredient(iron_version.expensive, "iron-gear-wheel", "ei_iron-mechanical-parts", 8) 
+	end
+
+	data:extend({
+		iron_version
+	})
+end
