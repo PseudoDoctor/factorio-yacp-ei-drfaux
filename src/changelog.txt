@@ -1,27 +1,47 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: 22.03.2023
+  Features:
+    - Changelog fixes
+---------------------------------------------------------------------------------------------------
 Version: 0.1.0
-Date: 2023-03-21 22:02
+Date: 21.03.2023
   Features:
     - First published release
+    - Replaces Iron Gear Wheel with either Iron Mechanical Parts or Engine Unit
+      Most mods do this automatically. I do not know why ChainGunner, Hauler, and Warden did not. Load order?
+  Changes:
+    - AAI ChainGunner and AAI Hauler does not use Engine Unit
+      replace_ingredient(iron_version, "iron-gear-wheel", "ei_iron-mechanical-parts", 6) 
+		  replace_ingredient(iron_version, "iron-plate", "ei_iron-beam", 20)
+    - AAI Warden does use Engine Unit
+      replace_ingredient(iron_version, "iron-gear-wheel", "engine-unit", 8) 
+		  replace_ingredient(iron_version, "iron-plate", "ei_iron-mechanical-parts", 20)
+    - Reverse Factory
+      replace_ingredient(iron_version, "iron-gear-wheel", "ei_iron-mechanical-parts", 5) 
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.7
+Date: 21.03.2023
   Changes:
     - Add Reverse Factory
 ---------------------------------------------------------------------------------------------------
-Verison: 0.0.6
+Version: 0.0.6
+Date: 21.03.2023
   Changes:
     - Adjust AAI vehicle ingredient count to match original mod
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.5
+Date: 21.03.2023
   Changes:
     - Add AAI Vehicles hauler and warden
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.2
+Date: 21.03.2023
   Changes:
     - Make Exotic Industries a requirement
 ---------------------------------------------------------------------------------------------------
 Version: 0.0.1
-Date: 2023-03-21 13:07
+Date: 21.03.2023
   Features:
     - First version
   Changes:

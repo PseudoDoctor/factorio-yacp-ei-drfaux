@@ -2,14 +2,14 @@ import org.apache.tools.ant.filters.ReplaceTokens
 // https://wiki.factorio.com/Tutorial:Modding_tutorial
 /**
  * version is always numerical, "number.number.number" for "main.major.minor", for example "0.6.4". Each number can range from 0 to 65535.
- * output zip file must be {mod-name}_{version-number} for this mod, it will be "hello-world-drfaux_0.0.1"
+ * output zip file must be {mod-name}_{version-number} for this mod, it will be "yacp-ei-drfaux_0.0.1"
 
- * First, output src to build/{mod-name}_{version-number}
+ * First, output src to build/prep/{mod-name}_{version-number}
  * Second, modify info.json with version
- * Third, zip build/{mod-name}_{version-number} to build/{mod-name}_{version-number}.zip
+ * Third, zip build/deploy/{mod-name}_{version-number} to build/{mod-name}_{version-number}.zip
  */
  def modName = "yacp-ei-drfaux"
- def modVersion = "0.1.0"
+ def modVersion = "0.1.1"
  def modNameVersion = "${modName}_${modVersion}"
  def prepDir = "${buildDir}/prep"
  def zipDst = "${modNameVersion}.zip"
@@ -43,7 +43,6 @@ tasks.register('deploy-local', Exec){
     logger.lifecycle("${dstModsDir}")
     logger.lifecycle("${buildDir}/deploy")
   commandLine 'cp', "${buildDir}/deploy/${zipDst}", "${dstModsDir}"
-  //store the output instead of printing to the console:
   standardOutput = new ByteArrayOutputStream()
   ext.output = {
     return standardOutput.toString()
