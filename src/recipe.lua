@@ -25,23 +25,23 @@ end
 --   end
 if data.raw.recipe["vehicle-chaingunner"] then
 	local base = data.raw.recipe["vehicle-chaingunner"]
-	local iron_version = table.deepcopy(base)
+	local chaingunner_modified = table.deepcopy(base)
 
-	if iron_version.ingredients then 
-		replace_ingredient(iron_version, "iron-gear-wheel", "ei_iron-mechanical-parts", 6) 
-		replace_ingredient(iron_version, "iron-plate", "ei_iron-beam", 16)
+	if chaingunner_modified.ingredients then 
+		replace_ingredient(chaingunner_modified, "iron-gear-wheel", "ei_iron-mechanical-parts", 6) 
+		replace_ingredient(chaingunner_modified, "iron-plate", "ei_iron-beam", 16)
 	end
-	if iron_version.normal then
-		replace_ingredient(iron_version.normal, "iron-gear-wheel", "ei_iron-mechanical-parts", 6) 
-		replace_ingredient(iron_version.normal, "iron-plate", "ei_iron-beam", 16)
+	if chaingunner_modified.normal then
+		replace_ingredient(chaingunner_modified.normal, "iron-gear-wheel", "ei_iron-mechanical-parts", 6) 
+		replace_ingredient(chaingunner_modified.normal, "iron-plate", "ei_iron-beam", 16)
 	end
-	if iron_version.expensive then
-		replace_ingredient(iron_version.expensive, "iron-gear-wheel", "ei_iron-mechanical-parts", 8) 
-		replace_ingredient(iron_version.expensive, "iron-plate", "ei_iron-beam", 20)
+	if chaingunner_modified.expensive then
+		replace_ingredient(chaingunner_modified.expensive, "iron-gear-wheel", "ei_iron-mechanical-parts", 8) 
+		replace_ingredient(chaingunner_modified.expensive, "iron-plate", "ei_iron-beam", 20)
 	end
 
 	data:extend({
-		iron_version
+		chaingunner_modified
 	})
 end
 -- -- "original" recipe modification if aai_industry is installed
@@ -59,23 +59,23 @@ end
 --   end
 if data.raw.recipe["vehicle-hauler"] then
 	local base = data.raw.recipe["vehicle-hauler"]
-	local iron_version = table.deepcopy(base)
+	local hauler_modified = table.deepcopy(base)
 
-	if iron_version.ingredients then 
-		replace_ingredient(iron_version, "iron-gear-wheel", "ei_iron-mechanical-parts", 6) 
-		replace_ingredient(iron_version, "iron-plate", "ei_iron-beam", 20)
+	if hauler_modified.ingredients then 
+		replace_ingredient(hauler_modified, "iron-gear-wheel", "ei_iron-mechanical-parts", 6) 
+		replace_ingredient(hauler_modified, "iron-plate", "ei_iron-beam", 20)
 	end
-	if iron_version.normal then
-		replace_ingredient(iron_version.normal, "iron-gear-wheel", "ei_iron-mechanical-parts", 6) 
-		replace_ingredient(iron_version.normal, "iron-plate", "ei_iron-beam", 20)
+	if hauler_modified.normal then
+		replace_ingredient(hauler_modified.normal, "iron-gear-wheel", "ei_iron-mechanical-parts", 6) 
+		replace_ingredient(hauler_modified.normal, "iron-plate", "ei_iron-beam", 20)
 	end
-	if iron_version.expensive then
-		replace_ingredient(iron_version.expensive, "iron-gear-wheel", "ei_iron-mechanical-parts", 6) 
-		replace_ingredient(iron_version.expensive, "iron-plate", "ei_iron-beam", 20)
+	if hauler_modified.expensive then
+		replace_ingredient(hauler_modified.expensive, "iron-gear-wheel", "ei_iron-mechanical-parts", 6) 
+		replace_ingredient(hauler_modified.expensive, "iron-plate", "ei_iron-beam", 20)
 	end
 
 	data:extend({
-		iron_version
+		hauler_modified
 	})
 end
 -- -- "original" recipe modification if aai_industry is installed
@@ -95,61 +95,61 @@ end
 -- 	  {type="item", name="radar", amount=1},
 -- 	}
 --   end
-if data.raw.recipe["vehicle-warden"] then
+if data.raw.recipe["vehicle-warden"] then0
 	local base = data.raw.recipe["vehicle-warden"]
-	local iron_version = table.deepcopy(base)
+	local warden_modified = table.deepcopy(base)
 
-	if iron_version.ingredients then 
-		replace_ingredient(iron_version, "iron-gear-wheel", "engine-unit", 8) 
-		replace_ingredient(iron_version, "iron-plate", "ei_iron-mechanical-parts", 20)
+	if warden_modified.ingredients then 
+		replace_ingredient(warden_modified, "iron-gear-wheel", "engine-unit", 8) 
+		replace_ingredient(warden_modified, "iron-plate", "ei_iron-mechanical-parts", 20)
 	end
-	if iron_version.normal then
-		replace_ingredient(iron_version.normal, "iron-gear-wheel", "engine-unit", 8) 
-		replace_ingredient(iron_version.normal, "iron-plate", "ei_iron-mechanical-parts", 20)
+	if warden_modified.normal then
+		replace_ingredient(warden_modified.normal, "iron-gear-wheel", "engine-unit", 8) 
+		replace_ingredient(warden_modified.normal, "iron-plate", "ei_iron-mechanical-parts", 20)
 	end
-	if iron_version.expensive then
-		replace_ingredient(iron_version.expensive, "iron-gear-wheel", "engine-unit", 8) 
-		replace_ingredient(iron_version.expensive, "iron-plate", "ei_iron-mechanical-parts", 30)
+	if warden_modified.expensive then
+		replace_ingredient(warden_modified.expensive, "iron-gear-wheel", "engine-unit", 8) 
+		replace_ingredient(warden_modified.expensive, "iron-plate", "ei_iron-mechanical-parts", 30)
 	end
 
 	data:extend({
-		iron_version
+		warden_modified
 	})
 end
 
 if data.raw.recipe["reverse-factory-1"] then
 	local base = data.raw.recipe["reverse-factory-1"]
-	local iron_version = table.deepcopy(base)
+	local reverse1_modified = table.deepcopy(base)
 
-	if iron_version.ingredients then 
-		replace_ingredient(iron_version, "iron-gear-wheel", "ei_iron-mechanical-parts", 5) 
+	if reverse1_modified.ingredients then 
+		replace_ingredient(reverse1_modified, "iron-gear-wheel", "ei_iron-mechanical-parts", 5) 
 	end
-	if iron_version.normal then
-		replace_ingredient(iron_version.normal, "iron-gear-wheel", "ei_iron-mechanical-parts", 5) 
+	if reverse1_modified.normal then
+		replace_ingredient(reverse1_modified.normal, "iron-gear-wheel", "ei_iron-mechanical-parts", 5) 
 	end
-	if iron_version.expensive then
-		replace_ingredient(iron_version.expensive, "iron-gear-wheel", "ei_iron-mechanical-parts", 8) 
+	if reverse1_modified.expensive then
+		replace_ingredient(reverse1_modified.expensive, "iron-gear-wheel", "ei_iron-mechanical-parts", 8) 
 	end
 
 	data:extend({
-		iron_version
+		reverse1_modified
 	})
 end
 if data.raw.recipe["reverse-factory-2"] then
 	local base = data.raw.recipe["reverse-factory-2"]
-	local iron_version = table.deepcopy(base)
+	local reverse2_modified = table.deepcopy(base)
 
-	if iron_version.ingredients then 
-		replace_ingredient(iron_version, "iron-gear-wheel", "ei_iron-mechanical-parts", 5) 
+	if reverse2_modified.ingredients then 
+		replace_ingredient(reverse2_modified, "iron-gear-wheel", "ei_iron-mechanical-parts", 5) 
 	end
-	if iron_version.normal then
-		replace_ingredient(iron_version.normal, "iron-gear-wheel", "ei_iron-mechanical-parts", 5) 
+	if reverse2_modified.normal then
+		replace_ingredient(reverse2_modified.normal, "iron-gear-wheel", "ei_iron-mechanical-parts", 5) 
 	end
-	if iron_version.expensive then
-		replace_ingredient(iron_version.expensive, "iron-gear-wheel", "ei_iron-mechanical-parts", 8) 
+	if reverse2_modified.expensive then
+		replace_ingredient(reverse2_modified.expensive, "iron-gear-wheel", "ei_iron-mechanical-parts", 8) 
 	end
 
 	data:extend({
-		iron_version
+		reverse2_modified
 	})
 end

@@ -9,6 +9,7 @@
         "exotic-industries >= 0.2.1",
         "? aai-vehicles-chaingunner >= 0.6.1",
         "? aai-vehicles-warden >= 0.5.3",
-        "? aai-vehicles-hauler >= 0.6.1"        
+        "? aai-vehicles-hauler >= 0.6.1",
+        "? reverse-factory >= 8.1.17"
     ]
 }
