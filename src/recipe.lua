@@ -95,7 +95,7 @@ end
 -- 	  {type="item", name="radar", amount=1},
 -- 	}
 --   end
-if data.raw.recipe["vehicle-warden"] then0
+if data.raw.recipe["vehicle-warden"] then
 	local base = data.raw.recipe["vehicle-warden"]
 	local warden_modified = table.deepcopy(base)
 

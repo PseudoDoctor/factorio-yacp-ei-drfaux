@@ -1,7 +1,7 @@
 {
     "name": "yacp-ei-drfaux",
     "version": "@@VERSION@@",
-    "title": "Yet Another Compatibility Patch for Exotic Industries",
+    "title": "Yet Another Compatibility Patch for Exotic Industries and other mods Iron Gear Wheel recipe",
     "author": "Dr Faux",
     "factorio_version": "1.1",
     "dependencies": [
